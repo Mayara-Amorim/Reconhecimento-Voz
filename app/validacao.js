@@ -1,12 +1,12 @@
 function validaChute(chute) {
     const num = +chute;
 
-    if(chuteForInvalido){
+    if(chuteForInvalido(num)){
         elementoChute.innerHTML+=`<div>Valor Invalido</div>`
         return
   
     }
-    if(validaNumeroMaiorMenor){
+    if(validaNumeroMaiorMenor(num)){
        elementoChute.innerHTML+=`<div>
        Valor inválido.Fale um numero entre ${maiorValor} e ${menorValor};
        </div>`//este precisam ser o maior valor e o menor valor da constante do sorteio(pois é aqui que definimos o minimo e maximo) não o do html.
